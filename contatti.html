@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - WebsiteMaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">WebsiteMaker</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="processo.html">Processo</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="garanzia.html">Garanzia</a></li>
+            <li><a href="contatti.html" class="btn-contatti">Contatti</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero" style="padding: 60px 0;">
+    <div class="container">
+        <h1>Contattami</h1>
+        <p style="font-size: 1.2rem; color: #e2e8f0;">Pronto a creare il tuo sito? Scrivi o chiama</p>
+    </div>
+</header>
+
+<!-- CONTATTI -->
+<section style="padding: 80px 0;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1000px; margin: 0 auto;">
+            
+            <!-- METODI DI CONTATTO -->
+            <div>
+                <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #1a1a1a;">Modo Più Veloce?</h2>
+                
+                <div class="contact-method">
+                    <h3>📞 Chiama Direttamente</h3>
+                    <p style="font-size: 1.5rem; color: #2563eb; font-weight: bold; margin: 1rem 0;">
+                        <a href="tel:3452390167" style="text-decoration: none; color: inherit;">345 239 0167</a>
+                    </p>
+                    <p>Parla con me subito. Preferisco una telefonata per capire bene il tuo progetto.</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>💬 WhatsApp</h3>
+                    <p style="margin: 1rem 0;">
+                        <a href="https://wa.me/393452390167" class="btn btn-primary" style="display: inline-block;">Scrivi su WhatsApp</a>
+                    </p>
+                    <p>Messaggistica istantanea. Mi piace anche il testo, rispondo veloce.</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>📧 Email</h3>
+                    <p style="word-break: break-all;">
+                        <a href="mailto:info@websitemaker.it" style="color: #2563eb; text-decoration: none;">info@websitemaker.it</a>
+                    </p>
+                    <p>Per dubbi o informazioni scrivi un'email. Rispondo in max 24 ore.</p>
+                </div>
+
+                <div class="contact-method">
+                    <h3>🌍 Posizione</h3>
+                    <p>Studio indipendente · Italia</p>
+                    <p>Lavoro da remoto. Posso creare il sito tuo da qualsiasi parte d'Italia (o del mondo!).</p>
+                </div>
+            </div>
+
+            <!-- FORM CONTATTO -->
+            <div>
+                <h2 style="font-size: 2rem; margin-bottom: 2rem; color: #1a1a1a;">Invia un Messaggio</h2>
+                
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="oggetto">Oggetto *</label>
+                        <input type="text" id="oggetto" name="oggetto" placeholder="Es: Voglio il mio sito" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio *</label>
+                        <textarea id="messaggio" name="messaggio" rows="5" placeholder="Raccontami del tuo progetto..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Invia Messaggio</button>
+                    
+                    <p style="font-size: 0.9rem; color: #64748b; margin-top: 1rem; text-align: center;">
+                        Rispondo velocemente, spesso entro 1-2 ore
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- INFO AGGIUNTIVE -->
+<section style="padding: 60px 0; background: #f8fafc;">
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #1a1a1a;">Risposte Veloci</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+            
+            <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center;">
+                <p style="font-size: 3rem; margin-bottom: 0.5rem;">⚡</p>
+                <h3 style="color: #2563eb; margin-bottom: 1rem;">Tempo di Risposta</h3>
+                <p style="color: #64748b;">Rispondo in max 2 ore durante l'orario di lavoro (9-18 dal lunedì al venerdì)</p>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center;">
+                <p style="font-size: 3rem; margin-bottom: 0.5rem;">💬</p>
+                <h3 style="color: #2563eb; margin-bottom: 1rem;">Conversazione Diretta</h3>
+                <p style="color: #64748b;">Preferisco parlare direttamente. Una telefonata vale mille email.</p>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: 12px; text-align: center;">
+                <p style="font-size: 3rem; margin-bottom: 0.5rem;">✓</p>
+                <h3 style="color: #2563eb; margin-bottom: 1rem;">Consulenza Gratis</h3>
+                <p style="color: #64748b;">La prima chiacchierata per capire il tuo progetto è completamente gratuita.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA FINALE -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Pronti a iniziare?</h2>
+        <p>Scegli il metodo che preferisci e contattami</p>
+        <div class="cta-buttons">
+            <a href="tel:3452390167" class="btn btn-primary btn-large">Chiamami: 345 239 0167</a>
+            <a href="https://wa.me/393452390167" class="btn btn-secondary btn-large">WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 WebsiteMaker - Siti Professionali a 150€</p>
+        <p>📞 345 239 0167 | 🌐 Studio indipendente · Italia</p>
+    </div>
+</footer>
+
+<style>
+.contact-method {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-method h3 {
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-method p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+    
+    .contact-form {
+        margin-top: 2rem;
+    }
+}
+</style>
+
+<script>
+function handleSubmit(e) {
+    e.preventDefault();
+    
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefono = document.getElementById('telefono').value;
+    const oggetto = document.getElementById('oggetto').value;
+    const messaggio = document.getElementById('messaggio').value;
+    
+    // Crea link WhatsApp con il messaggio
+    const testo = `Ciao! Mi chiamo ${nome}%0A%0AOggetto: ${oggetto}%0A%0A${messaggio}%0A%0AContattami a: ${email}${telefono ? '%0ATelefono: ' + telefono : ''}`;
+    const url = `https://wa.me/393452390167?text=${testo}`;
+    
+    window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
